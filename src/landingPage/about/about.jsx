@@ -1,10 +1,12 @@
-import React from 'react'
+import Hero from './components/Hero'
+import Team from './components/Team'
 
 const About = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+        <Hero/>
+        <Team/>
+    </>
   )
 }
 

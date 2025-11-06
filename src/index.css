@@ -70,3 +70,11 @@ button:focus-visible {
 .nav-link{
   margin-left: 40px;
 }
+.textD-none-link{
+  text-decoration: none;
+}
+
+.ceo-image{
+  border-radius: 100%;
+  width:50%;
+}
