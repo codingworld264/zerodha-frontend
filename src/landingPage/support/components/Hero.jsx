@@ -1,9 +1,12 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 
 const Hero = () => {
   return (
-    <div>
-      
+    <div className="container-fluid" id="supportHero">
+      <div className="row  mb-5" id="supportWrapper">
+        <h3 className="">Support</h3>
+        <Link to="#" className="fs-5">My Ticket</Link>
+      </div>
     </div>
   )
 }
