@@ -1,10 +1,12 @@
-import React from 'react'
+import Brokerage from './components/Brokerage'
+import Hero from './components/Hero'
 
 const Pricing = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Hero/>
+      <Brokerage/>
+    </>
   )
 }
 
