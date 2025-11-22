@@ -4,6 +4,7 @@ import zerodhaFundhouse from "../../../assets/images/zerodhaFundhouse.png";
 import sensibullLogo from "../../../assets/images/sensibullLogo.svg";
 import dittoLogo from "../../../assets/images/dittoLogo.png";
 import tijori from "../../../assets/images/tijori.svg";
+import ImageCard from "../../components/ImageCard";
 
 const Universe = () => {
 
@@ -34,28 +35,16 @@ const Universe = () => {
     }]
   ]
 
-  const ImageCard = ({imageUrl, description}) => {
-    return (
-      <div className="col-4 mt-5 p-3">
-        {description && (
-          <>
-            <img src={imageUrl} alt="" style={{width:"160px", height:"52px"}}/>
-            <p className="text-small text-muted mt-2" dangerouslySetInnerHTML={{ __html: description }} />
-          </>
-        )}
-      </div>
-    );
-  }
   return (
     <div className="container p-5 mb-5">
-          <div className="row text-center">
+          <div className="row text-center  mb-2">
               <h1 className="mt-5 fs-3">The Zerodha Universe</h1>
               <p className="text-muted mt-2">Extend your trading and investment experience even further with our partner platforms</p>
           </div>
           <div className="row text-center">
             {universe?.length ? universe.map((u, i) => {
               return (
-                  <div className="row" key={`upper_${i}`}>
+                  <div className="row mb-5" key={`upper_${i}`}>
                     {u?.length ? u.map((d, j) => {
                       return <ImageCard imageUrl={d?.image} description={d?.description} key={`inner_${j}`}/>
                     }):""}
