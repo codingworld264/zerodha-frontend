@@ -1,0 +1,1 @@
+export const ArrowIcon = () => (<i className="fa fa-long-arrow-right" aria-hidden="true"></i>);
